@@ -1,6 +1,6 @@
 class AddSafetyStockToProducts < ActiveRecord::Migration
   def self.up
-    add_column :products, :safety_stock, :integer
+    add_column :products, :safety_stock, :integer, :default => 0, :null => false
   end
 
   def self.down
