@@ -1,0 +1,4 @@
+--- 
+th:
+  safety_stock: "จำนวนปลอดภัย"
+  over_safety_stock_products: "สินค้าเหลือน้อยกว่าจำนวนปลอดภัย"  
