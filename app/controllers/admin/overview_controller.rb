@@ -151,11 +151,11 @@ class Admin::OverviewController < Admin::BaseController
   end
 
   def out_of_stock_products
-    Product.where(:count_on_hand => 0).select { |product| product.variants.count == 0 }
+    Product.where("count_on_hand <= 0").select { |product| product.variants.count == 0 }
   end
 
   def out_of_stock_variants
-    Variant.where(:count_on_hand => 0).select { |variant| variant.is_master == false }
+    Variant.where("count_on_hand <= 0").select { |variant| variant.is_master == false }
   end
 
   
