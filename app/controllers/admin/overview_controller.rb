@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # this clas was inspired (heavily) from the mephisto admin architecture
 
 class Admin::OverviewController < Admin::BaseController

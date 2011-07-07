@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spree_core'
 require 'spree_safety_stock_hooks'
 
